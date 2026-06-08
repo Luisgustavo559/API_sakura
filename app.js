@@ -8,7 +8,9 @@ const userRoutes = require('./routes/users');
 app.use('/users', userRoutes);
 
 const corredoresRoutes = require('./routes/corredores');
+app.use('/users', userRoutes); 
 app.use('/corredores', corredoresRoutes);
+app.use('/gerador', geradorRoutes);
 
 const voltasRoutes = require('./routes/voltas');
 app.use('/voltas', voltasRoutes);
